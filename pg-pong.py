@@ -137,7 +137,7 @@ while True:
         if episode_number % 100 == 0:
             pickle.dump(model, open('save.p', 'wb'))
 
-        if running_reward > 10:
+        if running_reward > -16:
             end = datetime.datetime.now()
             print(f'It took {end-start} for the AI to reach 11 winning mean threshold')
             break
